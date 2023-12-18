@@ -1,0 +1,85 @@
+.formContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titleModal {
+    font-family: Lato, sans-serif;
+}
+
+.text {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    font-family: Lato, sans-serif;
+}
+
+.select {
+    font-family: Lato, sans-serif;
+}
+
+.button {
+    background: #1F64FF;
+    border-radius: 10px;
+    color: white;
+}
+
+.button:hover {
+    background: #143992;
+}
+
+.eventsPageContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 46px 40px;
+    height: 100vh;
+}
+
+.tabsWithCreateButtonContainer {
+    margin-top: 52px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eventsPageTabsBarContentDefault {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Lato, sans-serif;
+    padding: 0 18px 15px;
+    color: #AAB2C8;
+}
+
+.eventsPageTabsBarContentSelected {
+    composes: eventsPageTabsBarContentDefault;
+    color: #000022;
+}
+
+.createNewEventButton {
+    background-color: #1F64FF;
+    font-style: italic;
+    font-family: Lato, sans-serif;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 27px;
+    border: 0;
+    font-size: 24px;
+    font-weight: 500;
+    height: 50px;
+}
+
+.eventsListContainer {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex: 3 1 0;
+    overflow: scroll;
+    flex-direction: column;
+    gap: 20px;
+}

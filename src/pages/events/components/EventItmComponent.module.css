@@ -1,0 +1,34 @@
+.eventItemComponentContainer {
+    width: 100%;
+    height: 110px;
+    background-color: #F5F6FA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 16px 18px 16px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eventItemTitle {
+    font-family: Lato, sans-serif;
+    color: #000022;
+    font-size: 20px;
+}
+
+.eventItemDate {
+    font-family: Lato, sans-serif;
+    color: #AAB2C8;
+    padding-top: 6px;
+    font-size: 20px;
+}
+
+.eventItemSendBtn {
+    background-color: #1F64FF;
+    color: #FFFFFF;
+    border-radius: 13px;
+    border: none;
+    padding: 16px;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+}

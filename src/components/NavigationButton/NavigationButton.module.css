@@ -1,0 +1,17 @@
+.NavigationButton {
+    width: 14.5vw;
+    height: 6vh;
+    background: #A8B4CE;
+    color: #FFF;
+    border: solid transparent 0;
+    border-radius: 12px;
+    box-shadow: 1px 4px 10px 0 #1F64FF40;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+}
+
+.NavigationButton:hover {
+    background: #1F64FF;
+}

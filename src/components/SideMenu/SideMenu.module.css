@@ -1,0 +1,21 @@
+.SideMenu {
+    background: #F5F6FA;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+    gap: 2rem;
+}
+
+.logo {
+    width: 12vw;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,124 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modalContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 12px;
+    background-color: #F5F6FA;
+    width: 45vw;
+    height: 80vh;
+    transform: scale(0.5);
+    transition: 0.4s all;
+}
+
+.modalContent.active {
+    transform: scale(1);
+}
+
+.modalName {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(59, 65, 86, 0.45);
+}
+
+/*повторяющийся стиль как в profile.module.css*/
+.addButton {
+    width: 30vw;
+    height: 7vh;
+    background: #1F64FF;
+    color: #FFF;
+    border: solid transparent 0;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px 0 #1F64FF40;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    box-shadow: 1px 4px 10px 0 #AAB2C873;
+    border-radius: 10px;
+    width: 35vw;
+    line-height: 64px;
+    font-size: 0;
+}
+
+input {
+    color: #00002299;
+    border: transparent;
+    border-bottom: 2px solid #F5F6FA;
+    height: 4em;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 1em;
+}
+input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input:focus {outline: 0;}
+input::-webkit-input-placeholder {
+    color: #AAB2C8;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: left;
+}
+
+input::-moz-placeholder {
+    color: #AAB2C8;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: left;
+}
+
+.firstInput {
+    border-radius: 0 10px 0 0;
+}
+
+.lastInput {
+    border-radius: 0 0 10px 0;
+    border: transparent;
+}
+
+span {
+    font-size: 16px;
+    vertical-align: middle;
+    background: #ffffff;
+    color: #00002299;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding-left: 1em;
+    border-bottom: 2px solid #F5F6FA;
+}
+
+.firstSpan {
+    border-radius: 10px 0 0 0;
+}
+
+.lastSpan {
+    border-radius: 0 0 0 10px;
+    border: transparent;
+}

@@ -1,0 +1,80 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modalContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 12px;
+    background-color: #F5F6FA;
+    transform: scale(0.5);
+    transition: 0.4s all;
+}
+
+.modalContent.active {
+    transform: scale(1);
+}
+
+
+
+.addButton  {
+    padding: 10px;
+    margin: 10px 0;
+    background: #1F64FF;
+    color: #FFF;
+    border: solid transparent 0;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px 0 #1F64FF40;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    position: relative;;
+    left: 35%;
+}
+
+
+.addButton:hover {
+    background: #1944ad;
+}
+
+.inputs {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 1fr 2.4fr;
+    /*box-shadow: 1px 4px 10px 0 #AAB2C873;*/
+    border-radius: 10px;
+    line-height: 64px;
+    font-size: 0;
+}
+
+.signInTitle {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(59, 65, 86, 0.45);
+}
+
+.signInLabel {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    position: relative;
+    right: 100px;
+    z-index: 100;
+}

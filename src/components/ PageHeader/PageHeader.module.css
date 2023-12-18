@@ -1,0 +1,14 @@
+.pageHeaderContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    gap: 30px;
+}
+
+.pageHeaderText {
+    font-size: 36px;
+    color: #000022;
+    font-family: Lato, sans-serif;
+    font-weight: 400
+}

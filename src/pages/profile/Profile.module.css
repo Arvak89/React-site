@@ -1,0 +1,114 @@
+/*нужно поправить стили для хобби*/
+
+.Profile {
+    display: grid;
+    grid-template-rows: 10vh 85vh;
+    grid-column-gap: 2%;
+    height: 100vh;
+    padding: 20px 40px
+}
+
+.ProfileContent {
+    display: grid;
+    grid-template-areas:
+            'userBasic useBasic useBasic hobbies'
+            'statistics statistics statistics statistics';
+    grid-template-rows: 20vh 55vh;
+    grid-template-columns: 20vw 10vw 10vw;
+    padding: 2em;
+    gap: 1em;
+    background: #F5F6FA;
+    border-radius: 30px;
+}
+
+/*разметка для имени, майла и кнопки отправки сообщения*/
+.userBasic {
+    grid-area: userBasic;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+/*разметка для хобби*/
+.hobbies {
+    grid-area: hobbies;
+    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 2px;
+    gap: 1em;
+}
+
+.hobby {
+    padding: 1em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #FDE9C0;
+    background: #2124659C;
+    border-radius: 3px;
+}
+
+/*разметка для статистики*/
+.statistics {
+    grid-area: statistics;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: auto;
+    gap: 1em;
+}
+
+.event {
+    width: 100%;
+    background-color: #F5F6FA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 16px 18px 16px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eventItemDate {
+    font-family: Lato, sans-serif;
+    color: #AAB2C8;
+    padding-top: 6px;
+    font-size: 20px;
+}
+
+.eventItemTitle {
+    font-family: Lato, sans-serif;
+    color: #000022;
+    font-size: 20px;
+}
+
+.userName {
+    font-family: Roboto, sans-serif;
+}
+
+.email {
+    font-family: Roboto, sans-serif;
+    color: #AAB2C8;
+}
+
+/*повторяющийся стиль как в Modal.module.css*/
+.addButton {
+    width: 15vw;
+    height: 6vh;
+    background: #1F64FF;
+    color: #FFF;
+    border: solid transparent 0;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px 0 #1F64FF40;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
